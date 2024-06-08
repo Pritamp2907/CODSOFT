@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container">
+            <nav><img src="images/logo2.png" class="logo2">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                 </ul>
+             </nav>
+            <div class="head-text">  <p>Front-end developer</p> <h1>Hi,I am <span>Pritam</span><br>Pankaj From India</h1></div>
+            </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="images/pp.png">
+            </div>
+            <div class="about-col2">
+                <h1>About me</h1>
+                <p>My name is Pritam Pankaj, and I am currently pursuing a B.Tech degree in Computer Science from the National Institute of Technology, Raipur.As an aspiring web developer,I have honed a diverse skill set and accumulated practical experience through various projects, positioning myself to contribute effectively to web development teams.<br>My education at NIT Raipur has provided a strong foundation in computer science principles, while my hands-on project experience has equipped me with the technical skills and problem-solving abilities essential for a web development role. I am passionate about creating innovative web solutions and continuously improving my skills to keep pace with evolving industry standards.<br> I am excited about the opportunity to contribute to dynamic projects and collaborate with a team of talented professionals to deliver exceptional web applications.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="skills">
+    <div class="skill-head">Skillset</div>
+    <div class="skill">
+        <p class="skillset active-link" onclick="opentab('Skills')">Skills</p>
+        <p class="skillset" onclick="opentab('experience')">Experience</p>
+        <p class="skillset" onclick="opentab('education')">Education</p>
+    </div>
+    <div class="skcontent active-tab" id="Skills">
+        <ul>
+            <li><span>DSA</span><br>Proficient in Data Structures and Algorithms</li>
+            <li><span>Programming language</span><br>C++</li>
+            <li><span>Front-end development</span><br>Proficient in HTML5, CSS3, JavaScript, and frameworks such as React.js and Angular.js. Adept at creating responsive, user-friendly interfaces.</li>
+            <li><span>Back-End Development</span><br>Experienced with server-side languages and frameworks, including Node.js, Express.js, and Python (Django). Skilled in building robust APIs and managing databases using SQL (MySQL, PostgreSQL) and NoSQL (MongoDB).</li>
+            <li><span>UI/UX Design</span><br>Knowledgeable in using design tools like Adobe XD and Figma to create wireframes and prototypes that enhance user experience.</li>
+        </ul>
+    </div>
+    <div class="skcontent" id="experience">
+        <ul>
+            <li><span>2021</span><br>C++ in 1st year NITRR</li>
+            <li><span>2022</span><br>Web dev HTML and CSS</li>
+            <li><span>2023</span><br>Node Js,MongoDB,React</li>
+            <li><span>2024</span><br>Back-End Development languages and frameworks, including Node.js, Express.js, and Python (Django). Building robust APIs and managing databases using SQL (MySQL, PostgreSQL) and NoSQL (MongoDB).</li>
+        </ul>
+    </div>
+    <div class="skcontent" id="education">
+        <ul>
+            <li><span>2019</span><br>10th class  froom JNV Raigarh<br>95.4%</li>
+            <li><span>2022-23</span><br>1st year at NIT Raipur <br>CPI 7.33</li>
+            <li><span>2023-24</span><br>2nd year at NIT Raipur</li>
+            </ul>
+    </div>
+</section>
+<script>
+    var skillsets=document.getElementsByClassName("skillset");
+    var skcontents=document.getElementsByClassName("skcontent");
+    function opentab(tabname){
+        for(skillset of skillsets){
+            skillset.classList.remove("active-link");
+        }
+        for(skcontent of skcontents){
+            skcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<section id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+    <div class="project-list">
+        <div class="project">
+           <a href="#"> <img src="images/project1.jpeg" alt="project1"></a>
+          <div class="layer">
+            <h3>pollution awareness website</h3><br>
+            <p>created a website to spread awareness about increasing pollution and its harmfull effects</p>
+          </div>
+        </div>
+        <div class="project">
+        <a href="#"><img src="images/project2.jpeg" alt="project2"></a>
+        <div class="layer">
+            <h3>Taxi fare predictor</h3><br>
+            <p>A python AI/ML project to predict the taxi fare between source and destination based on input dataset</p>
+           </div>
+         </div>
+    </div>
+    </div>
+</section>
+<section id="resume">
+    <div class="resume-head">
+        <h1 >Resume</h1>
+    </div>
+    <div class="btn">
+        <a href="images/Pritam_Pankaj_2026.pdf" download="" class="btn2">Download Resume</a>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-ttl">Contact Me</h1>
+                <p>pritampankaj2941@gmail.com</p>
+                <p>6267383085</p>
+                <div class="socia-icon">
+                    <a href="https://www.instagram.com/pritamp.2907?igsh=MTh1YWJpcG1ieXN5cQ==" target="_blank"><img src="images/icons8-instagram-logo-144.png"></a>
+                    <a href="https://www.codechef.com/users/pritampankaj29" target="_blank"><img src="https://cdn.codechef.com/images/cc-logo.svg"></a>
+                    <a href="https://leetcode.com/u/__Pritam_/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/LeetCode_logo_white_no_text.svg/141px-LeetCode_logo_white_no_text.svg.png?20200120234911"></a>
+                    <a href="https://github.com/Pritamp2907" target="_blank"><img src="images/icons8-github-128.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 [Pritam Pankaj]. All rights reserved.</p>
+</footer>
+</body>
+</html>
